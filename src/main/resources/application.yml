@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: sa
+    url: jdbc:h2:mem:testdb
+    username: sa
+ 
+# The above properties are pre-defined. Spring Data JPA will load these properties 
+
+# But below properties are application specific properties. we need to load these properties manually
+app:
+  messages:
+    contactSaveSuccessMsg: Contact Saved.....
+    contactSaveFailMsg: Failed to save contact....
+    contactDelSuccessMsg: Contact Deleted.....
+    contactDelFailMsg: Failed to Delete contact....
