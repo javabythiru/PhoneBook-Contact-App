@@ -2,7 +2,7 @@ package in.ashokit.rest;
 
 import java.util.List;
 import java.util.Map;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +18,7 @@ import in.ashokit.service.ContactService;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
+@CrossOrigin
 public class ContactRestController {
 	@Autowired
 	private ContactService service;
